@@ -1,1 +1,2 @@
-# nodejs-helloworld
+# aws-nodejs
+AWS NodeJS server with CodeDeploy

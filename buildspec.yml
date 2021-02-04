@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm install
+  post_build:
+    commands:
+      - echo Running post_build commands
+      - zip -qr build-output.zip *
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - build-output.zip

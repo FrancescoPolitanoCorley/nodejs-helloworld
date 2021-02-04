@@ -1,0 +1,1 @@
+echo "nothing to stop" | { pm2 stop all || true; }
