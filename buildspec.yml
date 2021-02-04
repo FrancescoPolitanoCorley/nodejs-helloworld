@@ -8,8 +8,10 @@ phases:
   post_build:
     commands:
       - echo Running post_build commands
+      - mkdir artifact
       - zip -qr build-output.zip *
+      - cp build-output.zip artifact
       - echo Build completed on `date`
 artifacts:
   files:
-    - build-output.zip
+    - artifact/build-output.zip
